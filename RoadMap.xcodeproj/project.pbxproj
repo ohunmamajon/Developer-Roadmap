@@ -16,6 +16,8 @@
 		CC778A3E27AB42CF0056C731 /* RoadMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC778A3D27AB42CF0056C731 /* RoadMapTests.swift */; };
 		CC778A4827AB42CF0056C731 /* RoadMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC778A4727AB42CF0056C731 /* RoadMapUITests.swift */; };
 		CC778A4A27AB42CF0056C731 /* RoadMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC778A4927AB42CF0056C731 /* RoadMapUITestsLaunchTests.swift */; };
+		CC778A5727AB43400056C731 /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC778A5627AB43400056C731 /* StoryBrain.swift */; };
+		CC778A5927AB43BC0056C731 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC778A5827AB43BC0056C731 /* Story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CC778A4327AB42CF0056C731 /* RoadMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC778A4727AB42CF0056C731 /* RoadMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadMapUITests.swift; sourceTree = "<group>"; };
 		CC778A4927AB42CF0056C731 /* RoadMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CC778A5627AB43400056C731 /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
+		CC778A5827AB43BC0056C731 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,9 @@
 			children = (
 				CC778A2627AB42CE0056C731 /* AppDelegate.swift */,
 				CC778A2827AB42CE0056C731 /* SceneDelegate.swift */,
-				CC778A2A27AB42CE0056C731 /* ViewController.swift */,
-				CC778A2C27AB42CE0056C731 /* Main.storyboard */,
+				CC778A5A27AB43F20056C731 /* Model */,
+				CCCA4CD227AC703E00B33140 /* View */,
+				CCCA4CD127AC6F8200B33140 /* Controller */,
 				CC778A2F27AB42CF0056C731 /* Assets.xcassets */,
 				CC778A3127AB42CF0056C731 /* LaunchScreen.storyboard */,
 				CC778A3427AB42CF0056C731 /* Info.plist */,
@@ -125,6 +130,31 @@
 				CC778A4927AB42CF0056C731 /* RoadMapUITestsLaunchTests.swift */,
 			);
 			path = RoadMapUITests;
+			sourceTree = "<group>";
+		};
+		CC778A5A27AB43F20056C731 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC778A5627AB43400056C731 /* StoryBrain.swift */,
+				CC778A5827AB43BC0056C731 /* Story.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCCA4CD127AC6F8200B33140 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC778A2A27AB42CE0056C731 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CCCA4CD227AC703E00B33140 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC778A2C27AB42CE0056C731 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC778A5727AB43400056C731 /* StoryBrain.swift in Sources */,
 				CC778A2B27AB42CE0056C731 /* ViewController.swift in Sources */,
 				CC778A2727AB42CE0056C731 /* AppDelegate.swift in Sources */,
 				CC778A2927AB42CE0056C731 /* SceneDelegate.swift in Sources */,
+				CC778A5927AB43BC0056C731 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
